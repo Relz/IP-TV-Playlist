@@ -1,0 +1,14 @@
+{
+    "Servers": {
+        "1": {
+            "Name": "IpTvPlaylist",
+            "Group": "Servers",
+            "Host": "postgres",
+            "Port": 5432,
+            "MaintenanceDB": "IpTvPlaylist",
+            "Username": "IpTvPlaylist_user",
+            "PassFile": "/var/lib/pgadmin/pgpass",
+            "SSLMode": "prefer"
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "IpTvPlaylist",
+            "cwd": "app",
+            "request": "launch",
+            "type": "dart",
+            "program": "bin/server.dart",
+            "env": {
+                "PORT": "9090",
+                "DB_HOST": "localhost",
+                "DB_PORT": "5432",
+                "DB_NAME": "IpTvPlaylist",
+                "DB_USER": "IpTvPlaylist_user",
+                "DB_PASS": "IpTvPlaylist_pass",
+            }
+        }
+    ]
+}

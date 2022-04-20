@@ -1,0 +1,54 @@
+services:
+  ip-tv-playlist:
+    build: ./app
+    environment:
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_NAME: IpTvPlaylist
+      DB_USER: IpTvPlaylist_user
+      DB_PASS: IpTvPlaylist_pass
+    ports:
+      - 9090:80
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:alpine
+    environment:
+      POSTGRES_DB: IpTvPlaylist
+      POSTGRES_USER: IpTvPlaylist_user
+      POSTGRES_PASSWORD: IpTvPlaylist_pass
+    ports:
+      - 5432:5432
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    restart: unless-stopped
+    environment:
+      PGADMIN_DEFAULT_EMAIL: pgadmin4@pgadmin.org
+      PGADMIN_DEFAULT_PASSWORD: admin
+      PGADMIN_CONFIG_SERVER_MODE: "False"
+      PGADMIN_CONFIG_MASTER_PASSWORD_REQUIRED: "False"
+    ports:
+      - 5050:80
+    volumes:
+      - ./pgadmin/servers.json:/pgadmin4/servers.json
+      - ./pgadmin/pgpass:/pgadmin4/pgpass
+    entrypoint: >
+      /bin/sh -c "
+      cp -f /pgadmin4/pgpass /var/lib/pgadmin/;
+      chmod 600 /var/lib/pgadmin/pgpass;
+      chown pgadmin:pgadmin /var/lib/pgadmin/pgpass;
+      /entrypoint.sh
+      "
+    depends_on:
+      - postgres
+
+networks:
+  default:
+    driver: bridge
+
+volumes:
+  pgdata:
