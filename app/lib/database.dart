@@ -1,9 +1,11 @@
 import 'dart:convert';
 import 'dart:io';
 
+import 'package:ip_tv_playlist/m3u/m3u_helper.dart';
 import 'package:postgres/postgres.dart';
 
 import 'channel.dart';
+import 'm3u/m3u_entry.dart';
 
 class Database {
   static const String _sourceIsUnreachableUrl =
@@ -53,13 +55,17 @@ class Database {
     }
   }
 
-  Future<void> refreshChannels() async {
+  Future<void> refreshChannels([
+    List<M3uEntry> m3uEntries = const <M3uEntry>[],
+  ]) async {
     await _connection.execute(
         'TRUNCATE public.channel_group, public.channel RESTART IDENTITY');
 
     final File initDataFile = File('assets/init_data.json');
     final Map<String, dynamic> initDataJson =
         jsonDecode(initDataFile.readAsStringSync());
+
+    _extendChannelsDataJson(initDataJson['channels'], m3uEntries);
 
     await _fillChannelGroups(initDataJson['channel_groups']);
     await _fillChannels(initDataJson['channels']);
@@ -109,6 +115,73 @@ class Database {
     return channelCount == 0;
   }
 
+  void _extendChannelsDataJson(
+    List<dynamic> channelsInitData,
+    List<M3uEntry> m3uEntries,
+  ) {
+    final Set<M3uEntry> usedM3uEntries = <M3uEntry>{};
+
+    for (final Map<String, dynamic> channelInitData in channelsInitData) {
+      final String name = channelInitData['name'];
+      final String namePattern = channelInitData['namePattern'];
+
+      if (namePattern.isEmpty) {
+        continue;
+      }
+
+      final RegExp nameRegExp = RegExp(
+        namePattern,
+        caseSensitive: false,
+      );
+
+      final List<M3uEntry> equalM3uEntries = m3uEntries.where(
+        (M3uEntry m3uEntry) {
+          String? m3uEntryInformation = m3uEntry.information;
+          return m3uEntryInformation != null &&
+              nameRegExp.hasMatch(m3uEntryInformation);
+        },
+      ).toList();
+
+      final List<String> additionalSourceUrls = equalM3uEntries
+          .map((M3uEntry m3uEntry) => m3uEntry.sourceUrl)
+          .toSet()
+          .toList();
+
+      channelInitData['sourceUrls'] = <String>{
+        ...additionalSourceUrls,
+        ...channelInitData['sourceUrls']
+      }.toList();
+
+      usedM3uEntries.addAll(equalM3uEntries);
+
+      if (additionalSourceUrls.isNotEmpty) {
+        print(
+            'Channel "$name" extended with: ${additionalSourceUrls.join(', ')}');
+      }
+    }
+
+    final List<M3uEntry> unusedM3uEntries = m3uEntries
+        .toSet()
+        .difference(usedM3uEntries)
+        .where((M3uEntry unusedM3uEntry) =>
+            channelsInitData.every((dynamic channelInitData) {
+              final List<String> sourceUrls =
+                  List.castFrom(channelInitData['sourceUrls']);
+              return !sourceUrls.contains(unusedM3uEntry.sourceUrl);
+            }))
+        .toList();
+
+    for (final M3uEntry m3uEntry in unusedM3uEntries) {
+      channelsInitData.add(<String, dynamic>{
+        "name": M3uHelper.extractChannelName(m3uEntry.information ?? ''),
+        "logoUrl": "",
+        "channelGroupId": "9",
+        "namePattern": "",
+        "sourceUrls": [m3uEntry.sourceUrl]
+      });
+    }
+  }
+
   Future<void> _fillChannelGroups(List<dynamic> channelGroupsInitData) async {
     for (Map<String, dynamic> channelGroupInitData in channelGroupsInitData) {
       await _connection.execute(
@@ -136,6 +209,7 @@ class Database {
 
       for (final String sourceUrl in sourceUrls) {
         final HttpClient httpClient = HttpClient();
+        httpClient.connectionTimeout = const Duration(seconds: 10);
         try {
           final Uri uri = Uri.parse(sourceUrl);
           final HttpClientRequest httpClientRequest =

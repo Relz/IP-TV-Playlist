@@ -1,4 +1,7 @@
 {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "Dart-Code.dart-code"
+    "editor.defaultFormatter": "Dart-Code.dart-code",
+    "cSpell.words": [
+        "ffprobe"
+    ]
 }

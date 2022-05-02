@@ -1,6 +1,6 @@
-import 'channel.dart';
+import '../channel.dart';
 
-class M3UBuilder {
+class M3uBuilder {
   static String build(List<Channel> channels) {
     final StringBuffer stringBuffer = StringBuffer('#EXTM3U\n');
     for (final Channel channel in channels) {

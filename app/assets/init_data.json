@@ -43,14 +43,16 @@
             "name": "Первый Канал",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/163711459-4622c6e3-6402-43b9-bfd3-9a84234f8ee1.jpg",
             "channelGroupId": "1",
+            "namePattern": ".*Первый Канал.*",
             "sourceUrls": [
-                "http://188.243.190.54:81/udp/239.239.3.50:5239?000"
+                ""
             ]
         },
         {
             "name": "Россия 1",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164046236-38b4a736-7ec9-4035-b64f-74105473fbfe.png",
             "channelGroupId": "1",
+            "namePattern": ".*Россия 1.*",
             "sourceUrls": [
                 "http://livetv.mylifeisgood.ml/mfolive.m3u8?media=russia1"
             ]
@@ -59,30 +61,58 @@
             "name": "Россия 24",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164046896-684954cd-71d9-4fe7-9bf6-ce3a08770b24.png",
             "channelGroupId": "1",
+            "namePattern": ".*Россия 24.*",
             "sourceUrls": []
         },
         {
             "name": "Мир",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/163721394-a8a58641-6603-4eb2-b56b-fb7ab6c73d2b.png",
             "channelGroupId": "1",
+            "namePattern": ".*Мир(?! 24).*",
             "sourceUrls": []
         },
         {
             "name": "Мир 24",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164047119-8ec21f2f-5946-4e3c-9969-50c078f4c3b2.png",
             "channelGroupId": "1",
+            "namePattern": ".*Мир 24.*",
             "sourceUrls": []
         },
         {
             "name": "Рен ТВ",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/163721461-d8b1c728-b1e5-4ad5-8d6b-9d393bd32efb.png",
             "channelGroupId": "1",
+            "namePattern": ".*Рен ТВ.*",
+            "sourceUrls": []
+        },
+        {
+            "name": "Вместе РФ",
+            "logoUrl": "https://user-images.githubusercontent.com/15068331/163721461-d8b1c728-b1e5-4ad5-8d6b-9d393bd32efb.png",
+            "channelGroupId": "1",
+            "namePattern": ".*Вместе РФ.*",
+            "sourceUrls": [
+                "http://cdn-01.bonus-tv.ru:8080/vmesterf/index.m3u8"
+            ]
+        },
+        {
+            "name": "Известия",
+            "logoUrl": "https://user-images.githubusercontent.com/15068331/166222175-0e0207c9-3119-4b1f-badf-c9b22b86bae8.png",
+            "channelGroupId": "1",
+            "namePattern": ".*(Известия|IZ[.]RU).*",
+            "sourceUrls": []
+        },
+        {
+            "name": "Оплот",
+            "logoUrl": "https://user-images.githubusercontent.com/15068331/166222175-0e0207c9-3119-4b1f-badf-c9b22b86bae8.png",
+            "channelGroupId": "1",
+            "namePattern": ".*Опл(о|o)т(?! 2).*",
             "sourceUrls": []
         },
         {
             "name": "ТВ-3",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/163721523-203d8bd2-5d2d-4f61-93e7-9c29a46eb901.png",
-            "channelGroupId": "1",
+            "channelGroupId": "2",
+            "namePattern": ".*ТВ(-| )?3.*",
             "sourceUrls": [
                 "https://bl.uma.media/live/407373/HLS/6307840_7,4280320_6,2703360_5,1408000_4,1070080_3,732160_2,394240_1/1613013859/5fdc4b8080160a4e56933b0402133da4/playlist.m3u8"
             ]
@@ -91,6 +121,7 @@
             "name": "ТНТ",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164047661-516a30ae-fc1d-4632-9086-18d8ab526fd7.png",
             "channelGroupId": "2",
+            "namePattern": ".*ТНТ(?! Music).*",
             "sourceUrls": [
                 "http://livetv.mylifeisgood.ml/mfolive.m3u8?media=tnthd",
                 "https://bl.uma.media/live/410338/HLS/6307840_7,4280320_6,2703360_5,1408000_4,1070080_3,732160_2,394240_1/1613013807/79ad96b5b87fdce129191b83aaf2fb46/playlist.m3u8"
@@ -100,20 +131,30 @@
             "name": "СТС",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/163721657-8d49392c-8f0f-44af-8d14-77700c232420.png",
             "channelGroupId": "2",
+            "namePattern": ".*СТС.*",
             "sourceUrls": []
         },
         {
             "name": "Пятница",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/163721678-35b6f990-0d7f-4ab3-99d0-ccb7203e6ae4.png",
             "channelGroupId": "2",
+            "namePattern": ".*Пятница.*",
             "sourceUrls": [
                 "https://bl.uma.media/live/410336/HLS_R/6307840_7,4280320_6,2703360_5,1408000_4,1070080_3,732160_2,394240_1/1613010957/e2cf94524a064ecb46389bb54a359d9a/playlist.m3u8"
             ]
         },
         {
+            "name": "Оплот 2",
+            "logoUrl": "https://user-images.githubusercontent.com/15068331/166222175-0e0207c9-3119-4b1f-badf-c9b22b86bae8.png",
+            "channelGroupId": "2",
+            "namePattern": ".*Опл(о|o)т 2.*",
+            "sourceUrls": []
+        },
+        {
             "name": "TV 1000 Action",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164047805-dc5cec3f-9df8-4ae8-b0c8-3945a4266b95.png",
             "channelGroupId": "3",
+            "namePattern": ".*TV ?1000 Action.*",
             "sourceUrls": [
                 "http://dmitry-tv.ml/hls/CH_TV1000ACTIONHD.m3u8",
                 "http://tv.streams.baikal-telecom.net/TV1000_Action/tracks-v1a1/index.m3u8"
@@ -123,6 +164,7 @@
             "name": "TV 1000",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164048192-09d164ab-4f85-417e-8971-e182f0fd9878.png",
             "channelGroupId": "3",
+            "namePattern": ".*TV ?1000(?! Action).*",
             "sourceUrls": [
                 "http://dmitry-tv.ml/hls/CH_TV1000HD.m3u8",
                 "http://tv.streams.baikal-telecom.net/TV1000/mpegts",
@@ -133,118 +175,214 @@
             "name": "Кино ТВ",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164048196-9b2c2f29-7eba-41f5-96cc-8f1436151ae7.jpg",
             "channelGroupId": "3",
+            "namePattern": ".*Кино ТВ.*",
             "sourceUrls": []
-        },
-        {
-            "name": "Plan B",
-            "logoUrl": "https://user-images.githubusercontent.com/15068331/164048678-5c383b86-c4cc-4106-a2c6-b1b38e8701d1.png",
-            "channelGroupId": "3",
-            "sourceUrls": [
-                "http://145.249.228.229:8000/play/a003"
-            ]
         },
         {
             "name": "Fox",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164048899-39cea6e4-57fd-4192-ab5b-f934bcea614d.png",
             "channelGroupId": "3",
+            "namePattern": ".*Fox.*",
             "sourceUrls": []
         },
         {
             "name": "AMEDIA PREMIUM",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164049069-7e28c983-f36d-43c7-8161-1f7ca46e9769.png",
             "channelGroupId": "3",
+            "namePattern": ".*AMEDIA PREMIUM.*",
             "sourceUrls": []
         },
         {
             "name": "Киноужас",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164049191-b5452d40-ca9e-4683-84b7-f3f91f39ffa2.png",
             "channelGroupId": "3",
+            "namePattern": ".*Киноужас.*",
             "sourceUrls": []
         },
         {
             "name": "Кинохит",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164049302-64df416a-37c3-4aa1-b8c1-912fbb7605e9.jpg",
             "channelGroupId": "3",
+            "namePattern": ".*Кинохит.*",
             "sourceUrls": []
         },
         {
             "name": "Мосфильм Золотая Коллекция",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164049378-d440958f-818f-4846-8181-f6f70772abf9.jpg",
             "channelGroupId": "3",
+            "namePattern": ".*Мосфильм Золотая Коллекция.*",
             "sourceUrls": []
         },
         {
             "name": "STV",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164049597-823c93c9-0956-4221-a9fe-bfbcd73fb2fd.png",
             "channelGroupId": "3",
+            "namePattern": ".*STV.*",
             "sourceUrls": []
         },
         {
             "name": "Дом кино Премиум",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164049702-a00fc1bc-ab83-4745-8b25-cd90f03bd0dd.png",
             "channelGroupId": "3",
+            "namePattern": ".*Дом кино Премиум.*",
             "sourceUrls": []
         },
         {
             "name": "Киномикс",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164049797-3d4fa8f2-4032-4cc1-a9f9-c399af680bc2.png",
             "channelGroupId": "3",
+            "namePattern": ".*Киномикс.*",
             "sourceUrls": []
         },
         {
             "name": "Киносемья",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164049892-2ac206c8-ef0a-4ed8-803c-9da461be8bb4.png",
             "channelGroupId": "3",
+            "namePattern": ".*Киносемья.*",
             "sourceUrls": []
         },
         {
             "name": "Киносвидание",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164049960-be5bcf9e-880e-4aa0-9ebb-c96f59e6941e.png",
             "channelGroupId": "3",
+            "namePattern": ".*Киносвидание.*",
             "sourceUrls": []
+        },
+        {
+            "name": "Кинокомедия",
+            "logoUrl": "https://user-images.githubusercontent.com/15068331/164049960-be5bcf9e-880e-4aa0-9ebb-c96f59e6941e.png",
+            "channelGroupId": "3",
+            "namePattern": ".*Кинокомедия.*",
+            "sourceUrls": [
+                "https://sc.id-tv.kz/Kinokomediya_hd_34_35.m3u8"
+            ]
         },
         {
             "name": "Мужское Кино",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164050031-94f24e7e-0b66-4c38-9ebe-188f69f1ba48.png",
             "channelGroupId": "3",
+            "namePattern": ".*Мужское Кино.*",
             "sourceUrls": []
         },
         {
             "name": "Кинопремьера",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164050121-b30fe3f3-26e8-42b5-862d-aeea3cf1189a.png",
             "channelGroupId": "3",
+            "namePattern": ".*Кинопремьера.*",
             "sourceUrls": []
         },
         {
             "name": "Bollywood",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164050242-e9f2cf0a-cbec-470e-9a63-799226f66765.jpg",
             "channelGroupId": "3",
+            "namePattern": ".*Bollywood.*",
             "sourceUrls": []
         },
         {
             "name": "Amedia Hit",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164050351-a7d9bb0d-3815-495c-a9ca-f69fd76ee490.png",
             "channelGroupId": "3",
+            "namePattern": ".*Amedia Hit.*",
             "sourceUrls": []
-        },
-        {
-            "name": "Ужас",
-            "logoUrl": "https://user-images.githubusercontent.com/15068331/163712605-b7c66801-2e4c-4d70-85d0-997eb431e4d2.png",
-            "channelGroupId": "3",
-            "sourceUrls": [
-                "http://autopilot.catcast.tv/content/41000/index.m3u8"
-            ]
         },
         {
             "name": "Фантастика",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164051146-3f204a5f-a572-4441-be71-75735e9ecd3d.jpg",
             "channelGroupId": "3",
+            "namePattern": ".*Фантастика.*",
             "sourceUrls": []
+        },
+        {
+            "name": "ViP Premiere",
+            "logoUrl": "https://user-images.githubusercontent.com/15068331/164051146-3f204a5f-a572-4441-be71-75735e9ecd3d.jpg",
+            "channelGroupId": "3",
+            "namePattern": ".*ViP Premiere.*",
+            "sourceUrls": [
+                "http://livetv.mylifeisgood.ml/mfolive.m3u8?media=vip_premiere"
+            ]
+        },
+        {
+            "name": "ViP Megahit",
+            "logoUrl": "https://user-images.githubusercontent.com/15068331/164051146-3f204a5f-a572-4441-be71-75735e9ecd3d.jpg",
+            "channelGroupId": "3",
+            "namePattern": ".*ViP Megahit.*",
+            "sourceUrls": [
+                "http://livetv.mylifeisgood.ml/mfolive.m3u8?media=vip_megahit"
+            ]
+        },
+        {
+            "name": "ViP Comedy",
+            "logoUrl": "https://user-images.githubusercontent.com/15068331/164051146-3f204a5f-a572-4441-be71-75735e9ecd3d.jpg",
+            "channelGroupId": "3",
+            "namePattern": ".*ViP Comedy.*",
+            "sourceUrls": [
+                "http://livetv.mylifeisgood.ml/mfolive.m3u8?media=vip_comedy"
+            ]
+        },
+        {
+            "name": "ViP Serial",
+            "logoUrl": "https://user-images.githubusercontent.com/15068331/164051146-3f204a5f-a572-4441-be71-75735e9ecd3d.jpg",
+            "channelGroupId": "3",
+            "namePattern": ".*ViP Serial.*",
+            "sourceUrls": [
+                "http://livetv.mylifeisgood.ml/mfolive.m3u8?media=vip_serial",
+                "http://94.229.250.73:8008/play/a003"
+            ]
+        },
+        {
+            "name": "Trash",
+            "logoUrl": "https://user-images.githubusercontent.com/15068331/164051146-3f204a5f-a572-4441-be71-75735e9ecd3d.jpg",
+            "channelGroupId": "3",
+            "namePattern": ".*Trash.*",
+            "sourceUrls": [
+                "http://livetv.mylifeisgood.ml/mfolive.m3u8?media=trash",
+                "https://livetv.mylifeisgood.ml/channels/trash"
+            ]
+        },
+        {
+            "name": "Домашний",
+            "logoUrl": "https://user-images.githubusercontent.com/15068331/164051146-3f204a5f-a572-4441-be71-75735e9ecd3d.jpg",
+            "channelGroupId": "3",
+            "namePattern": ".*Домашний.*",
+            "sourceUrls": []
+        },
+        {
+            "name": "Твое ТВ",
+            "logoUrl": "https://user-images.githubusercontent.com/15068331/166202247-3a9cdf9c-c124-492d-9367-0dffb46699b0.png",
+            "channelGroupId": "3",
+            "namePattern": ".*Тво(е|ё) ТВ.*",
+            "sourceUrls": []
+        },
+        {
+            "name": "Русский экстрим",
+            "logoUrl": "https://user-images.githubusercontent.com/15068331/166220961-e1e1d9c2-5f12-4c3e-9ad6-7f7df823f81e.png",
+            "channelGroupId": "3",
+            "namePattern": ".*Русский экстрим.*",
+            "sourceUrls": []
+        },
+        {
+            "name": "Discovery",
+            "logoUrl": "https://user-images.githubusercontent.com/15068331/166203783-62762b20-e136-4095-9e55-8a87a34d95f5.png",
+            "channelGroupId": "4",
+            "namePattern": ".*Discovery(?! Science).*",
+            "sourceUrls": [
+                "http://livetv.mylifeisgood.ml/mfolive.m3u8?media=discovery"
+            ]
+        },
+        {
+            "name": "Discovery Science",
+            "logoUrl": "https://user-images.githubusercontent.com/15068331/166203790-3fbc45b3-7423-44d3-bd8b-71e7ae19467b.png",
+            "channelGroupId": "4",
+            "namePattern": ".*Discovery Science.*",
+            "sourceUrls": [
+                "http://livetv.mylifeisgood.ml/mfolive.m3u8?media=discoveryscience"
+            ]
         },
         {
             "name": "DTX",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164051383-0b900940-0a06-47a1-9d72-37254e223695.png",
             "channelGroupId": "4",
+            "namePattern": ".*DTX.*",
             "sourceUrls": [
                 "https://livetv.mylifeisgood.ml/channels/discoverydtx"
             ]
@@ -253,12 +391,14 @@
             "name": "Home",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164051444-c21e77e8-2077-42dc-a0f6-7f6007b8a3cc.png",
             "channelGroupId": "4",
+            "namePattern": ".*Home.*",
             "sourceUrls": []
         },
         {
             "name": "Приключения",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164051583-c96fbc6d-ea52-4581-afdd-491231aab365.png",
             "channelGroupId": "4",
+            "namePattern": ".*Приключения.*",
             "sourceUrls": [
                 "http://livetv.mylifeisgood.ml/mfolive.m3u8?media=adventureshd"
             ]
@@ -267,6 +407,7 @@
             "name": "Первый космический",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164051660-47c4ade9-1a45-4776-a34a-6eafd35c1bea.png",
             "channelGroupId": "4",
+            "namePattern": ".*Первый космический.*",
             "sourceUrls": [
                 "https://livetv.mylifeisgood.ml/channels/firstspace"
             ]
@@ -275,18 +416,21 @@
             "name": "Глазами Туриста",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164051725-6062b760-6747-42a1-930f-c2e2e53e62fd.png",
             "channelGroupId": "4",
+            "namePattern": ".*Глазами Туриста.*",
             "sourceUrls": []
         },
         {
             "name": "Живая природа",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164051776-920e3517-b894-4b5d-b9b2-17aa41014947.png",
             "channelGroupId": "4",
+            "namePattern": ".*Живая природа.*",
             "sourceUrls": []
         },
         {
             "name": "Живи Активно",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164051847-16621569-625d-4663-82b2-732241bfddaa.png",
             "channelGroupId": "4",
+            "namePattern": ".*Живи Активно.*",
             "sourceUrls": [
                 "https://livetv.mylifeisgood.ml/channels/jiviactivno"
             ]
@@ -295,18 +439,21 @@
             "name": "National Geographic Wild",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164051951-1798ea43-da1b-4992-b30f-3089de0f3dc3.jpeg",
             "channelGroupId": "4",
+            "namePattern": ".*National Geographic Wild.*",
             "sourceUrls": []
         },
         {
             "name": "History",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164052033-a7cb7ff5-f8a7-485d-be56-4192534c9106.jpg",
             "channelGroupId": "4",
+            "namePattern": ".*History.*",
             "sourceUrls": []
         },
         {
             "name": "Дайвинг TV",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164158510-503304a7-d341-4bda-8ac8-2cfa88be4401.png",
             "channelGroupId": "4",
+            "namePattern": ".*Дайвинг TV.*",
             "sourceUrls": [
                 "http://live-planetaonline.cdnvideo.ru:80/http/smil:channel_130.smil/chunklist_b2628000.m3u8"
             ]
@@ -315,12 +462,14 @@
             "name": "Mezzo Live",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164052214-9309e55c-d8bd-4618-837f-8446cf1193d3.png",
             "channelGroupId": "4",
+            "namePattern": ".*Mezzo Live.*",
             "sourceUrls": []
         },
         {
             "name": "Енисей",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164052270-8f44d45b-7680-4107-9d08-28b0378601f2.png",
             "channelGroupId": "4",
+            "namePattern": ".*Енисей.*",
             "sourceUrls": [
                 "http://hls-eniseytv.cdnvideo.ru/eniseytv/stream1/playlist.m3u8"
             ]
@@ -329,6 +478,7 @@
             "name": "Мамонт",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164052356-60e9d827-5718-4361-93be-f7fcb2379c18.png",
             "channelGroupId": "4",
+            "namePattern": ".*Мамонт.*",
             "sourceUrls": [
                 "http://live-saha.cdnvideo.ru/saha/mamont/playlist.m3u8"
             ]
@@ -337,30 +487,35 @@
             "name": "Viasat Explorer",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164052445-9f7b1d13-f713-432e-8e8f-7c01c5acce7d.png",
             "channelGroupId": "4",
+            "namePattern": ".*Viasat Explorer.*",
             "sourceUrls": []
         },
         {
             "name": "Viasat History",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164052537-c31e894f-ba6e-435a-bd81-ac6d1a8d467f.png",
             "channelGroupId": "4",
+            "namePattern": ".*Viasat History.*",
             "sourceUrls": []
         },
         {
             "name": "Viasat Nature",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164052918-b59050f3-bee9-424d-a35b-1f7148d85a0c.png",
             "channelGroupId": "4",
+            "namePattern": ".*Viasat Nature.*",
             "sourceUrls": []
         },
         {
             "name": "HDL",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164069226-c6ee0c1f-70a0-4d1d-88f0-93080e764042.jpg",
             "channelGroupId": "4",
+            "namePattern": ".*HDL.*",
             "sourceUrls": []
         },
         {
             "name": "Диалоги о рыбалке",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164069317-cc5e2914-7e76-4b6a-88b6-d8c8e2a3b167.png",
             "channelGroupId": "4",
+            "namePattern": ".*Диалоги о рыбалке.*",
             "sourceUrls": [
                 "https://2serv.mylifeisgood.ml/channels/dialogiorybalke"
             ]
@@ -369,12 +524,14 @@
             "name": "Кухня ТВ",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164069444-9d893706-56e8-41c3-9087-e9cb784380d5.png",
             "channelGroupId": "4",
+            "namePattern": ".*Кухня ТВ.*",
             "sourceUrls": []
         },
         {
             "name": "Конный мир",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164069541-45258c0d-6a9f-41fd-8c6f-8f7bdb8d526d.png",
             "channelGroupId": "4",
+            "namePattern": ".*Конный мир.*",
             "sourceUrls": [
                 "http://83.222.205.10:38080/konnyimir/index.m3u8"
             ]
@@ -383,6 +540,7 @@
             "name": "ТВ Экстра",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164069614-146c46a4-2b7e-4d47-beb7-261d3157c0b5.png",
             "channelGroupId": "4",
+            "namePattern": ".*ТВ Экстра.*",
             "sourceUrls": [
                 "http://live-1.otcnet.ru:80/tvextra720b/index.m3u8"
             ]
@@ -391,36 +549,42 @@
             "name": "Вот ТВ",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164069697-6d0bd415-0c40-4f89-91d4-441c7360ab87.png",
             "channelGroupId": "4",
+            "namePattern": ".*Вот ТВ.*",
             "sourceUrls": []
         },
         {
             "name": "Nature Relaxation",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164070042-bd2af7e4-c506-45be-8e8b-0da5574a3cba.jpeg",
             "channelGroupId": "4",
+            "namePattern": ".*Nature Relaxation.*",
             "sourceUrls": []
         },
         {
             "name": "Silence TV WORLD",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164070197-03469d8c-9efb-43b4-8c7f-b4d9fa956b25.png",
             "channelGroupId": "4",
+            "namePattern": ".*Silence TV WORLD.*",
             "sourceUrls": []
         },
         {
             "name": "Sochi Live",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164070256-2156ba10-696b-4582-9af4-12fee384f93d.png",
             "channelGroupId": "4",
+            "namePattern": ".*Sochi Live.*",
             "sourceUrls": []
         },
         {
             "name": "MostVideo TV",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164070317-8dcbf59a-df23-43ed-a46f-44cfe10bd834.png",
             "channelGroupId": "4",
+            "namePattern": ".*MostVideo TV.*",
             "sourceUrls": []
         },
         {
             "name": "Red Bull TV",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164070364-aa902f1d-8e72-4126-aae7-ff26a2b3cb62.png",
             "channelGroupId": "4",
+            "namePattern": ".*Red Bull TV.*",
             "sourceUrls": [
                 "https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_3360.m3u8?denmstv.m3u8"
             ]
@@ -429,18 +593,21 @@
             "name": "TV Brics",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164070435-da18e8d6-e30c-48f1-ab53-90dd2ec13e67.jpg",
             "channelGroupId": "4",
+            "namePattern": ".*TV Brics.*",
             "sourceUrls": []
         },
         {
             "name": "Univer TV",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164070511-8767f94f-d229-4d38-9324-8edaeb80765e.png",
             "channelGroupId": "4",
+            "namePattern": ".*Univer TV.*",
             "sourceUrls": []
         },
         {
             "name": "Мособр",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164070749-645b0b49-6e12-4711-acec-9aefb30628f6.png",
             "channelGroupId": "4",
+            "namePattern": ".*Мособр.*",
             "sourceUrls": [
                 "http://retj.educom.ru/mosobrtv/tv1/index.m3u8"
             ]
@@ -449,20 +616,35 @@
             "name": "Фентези",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/163712605-b7c66801-2e4c-4d70-85d0-997eb431e4d2.png",
             "channelGroupId": "4",
-            "sourceUrls": [
-                "http://autopilot.catcast.tv/content/38144/index.m3u8"
-            ]
+            "namePattern": ".*(Фентези|Fentesy).*",
+            "sourceUrls": []
+        },
+        {
+            "name": "Brics TV",
+            "logoUrl": "https://user-images.githubusercontent.com/15068331/163712605-b7c66801-2e4c-4d70-85d0-997eb431e4d2.png",
+            "channelGroupId": "4",
+            "namePattern": ".*Brics TV.*",
+            "sourceUrls": []
+        },
+        {
+            "name": "Eurosport",
+            "logoUrl": "https://user-images.githubusercontent.com/15068331/164071289-9a3ce449-3b24-4316-96b7-cdebe5c8b1c5.png",
+            "channelGroupId": "5",
+            "namePattern": ".*Eurosport(?! (1|2)).*",
+            "sourceUrls": []
         },
         {
             "name": "Eurosport 1",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164070920-84e91917-2d7f-432e-bef0-04901f9db075.png",
             "channelGroupId": "5",
+            "namePattern": ".*Eurosport 1.*",
             "sourceUrls": []
         },
         {
             "name": "Eurosport 2",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164070987-e627a793-f6db-486d-a819-44da07790ddf.png",
             "channelGroupId": "5",
+            "namePattern": ".*Eurosport 2.*",
             "sourceUrls": [
                 "https://livetv.mylifeisgood.ml/channels/eurosport2"
             ]
@@ -471,12 +653,14 @@
             "name": "Motorvision.tv",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164071044-4ffead7c-8c9b-4994-8e11-eb8059d437eb.jpeg",
             "channelGroupId": "5",
+            "namePattern": ".*Motorvision.tv.*",
             "sourceUrls": []
         },
         {
             "name": "Viasat Sport",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164071122-8d486320-9c7d-4a04-9275-f8523d33c22f.png",
             "channelGroupId": "5",
+            "namePattern": ".*Viasat Sport.*",
             "sourceUrls": [
                 "https://bl.uma.media/live/485548/HLS/4614144_3,2883584/2/1/playlist.m3u8"
             ]
@@ -485,18 +669,14 @@
             "name": "Старт",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164071201-1a759c01-a489-4f1c-b7e6-04169868f561.png",
             "channelGroupId": "5",
-            "sourceUrls": []
-        },
-        {
-            "name": "Eurosport",
-            "logoUrl": "https://user-images.githubusercontent.com/15068331/164071289-9a3ce449-3b24-4316-96b7-cdebe5c8b1c5.png",
-            "channelGroupId": "5",
+            "namePattern": ".*Старт.*",
             "sourceUrls": []
         },
         {
             "name": "Nickelodeon",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164071362-c782b04b-e5d5-4017-a8b4-3eeb5bf104f6.png",
             "channelGroupId": "6",
+            "namePattern": ".*Nickelodeon.*",
             "sourceUrls": [
                 "http://livetv.mylifeisgood.ml/mfolive.m3u8?media=nickelodeon-hd"
             ]
@@ -505,6 +685,7 @@
             "name": "Мульт",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164071497-e5680c77-7c14-44e4-80f8-b6b0ee88e1b0.png",
             "channelGroupId": "6",
+            "namePattern": ".*Мульт.*",
             "sourceUrls": [
                 "https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=514"
             ]
@@ -513,12 +694,14 @@
             "name": "КАРУСЕЛЬ",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164071631-e896e689-9ee3-4421-a944-25968c97119d.png",
             "channelGroupId": "6",
+            "namePattern": ".*КАРУСЕЛЬ.*",
             "sourceUrls": []
         },
         {
             "name": "2x2",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164071730-443b2065-0b24-472e-ae56-f0165737b304.png",
             "channelGroupId": "6",
+            "namePattern": ".*2x2.*",
             "sourceUrls": [
                 "https://bl.uma.media/live/317805/HLS/4614144_3,2883584_2,1153024_1/1613019214/3754dbee773afc02014172ca26d3bb79/playlist.m3u8"
             ]
@@ -527,12 +710,14 @@
             "name": "Cartoon Network",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164071959-c73ed363-425f-4b43-98cd-cd2740188e27.svg",
             "channelGroupId": "6",
+            "namePattern": ".*Cartoon Network.*",
             "sourceUrls": []
         },
         {
             "name": "Жара Kids TV",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164071573-cee2242e-999c-486c-998d-609303a50672.png",
             "channelGroupId": "6",
+            "namePattern": ".*Жара Kids TV.*",
             "sourceUrls": [
                 "http://hls-zhara.cdnvideo.ru/zhara/zhara/playlist.m3u8"
             ]
@@ -541,6 +726,7 @@
             "name": "Страна FM",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164072023-2b44b947-ca3b-4389-8645-42a1cbaf3e70.jpg",
             "channelGroupId": "7",
+            "namePattern": ".*Страна FM.*",
             "sourceUrls": [
                 "http://live.stranafm.cdnvideo.ru/stranafm/stranafm_hd.sdp/playlist.m3u8"
             ]
@@ -549,40 +735,55 @@
             "name": "1HD Music",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164072248-93be6680-198a-49e5-926c-38288ca9a718.png",
             "channelGroupId": "7",
+            "namePattern": ".*1HD Music.*",
             "sourceUrls": []
         },
         {
             "name": "Первый Музыкальный 1",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164072348-25a357c3-fd04-494f-a61d-91c15e0c1d19.png",
             "channelGroupId": "7",
+            "namePattern": "",
             "sourceUrls": [
-                "http://rtmp.one.by:2200"
+                "http://rtmp.one.by:1300"
             ]
         },
         {
             "name": "Первый Музыкальный 2",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164072348-25a357c3-fd04-494f-a61d-91c15e0c1d19.png",
             "channelGroupId": "7",
+            "namePattern": "",
             "sourceUrls": [
-                "http://rtmp.one.by:1300"
+                "http://rtmp.one.by:2200"
+            ]
+        },
+        {
+            "name": "Первый Музыкальный 3",
+            "logoUrl": "https://user-images.githubusercontent.com/15068331/164072348-25a357c3-fd04-494f-a61d-91c15e0c1d19.png",
+            "channelGroupId": "7",
+            "namePattern": "",
+            "sourceUrls": [
+                "http://rtmp.one.by:2300"
             ]
         },
         {
             "name": "MTV Biggest Pop",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164072483-b8a693a6-a058-4a07-8d1b-5e6cc9dc879f.jpeg",
             "channelGroupId": "7",
+            "namePattern": ".*MTV Biggest Pop.*",
             "sourceUrls": []
         },
         {
             "name": "MTV Block Party",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164072567-693b50ea-ec5f-4aad-9518-03311e469f5c.png",
             "channelGroupId": "7",
+            "namePattern": ".*MTV Block Party.*",
             "sourceUrls": []
         },
         {
             "name": "ТНТ Music",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164072674-967cc164-7455-45ca-955e-fa512977464d.jpg",
             "channelGroupId": "7",
+            "namePattern": ".*ТНТ Music.*",
             "sourceUrls": [
                 "http://83.222.205.65:8080/tntmusic/index.m3u8"
             ]
@@ -591,6 +792,7 @@
             "name": "Hits 360",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164072780-403553ec-2911-44ed-bc1d-4ab433857121.png",
             "channelGroupId": "7",
+            "namePattern": ".*Hits 360.*",
             "sourceUrls": [
                 "http://cm.hostlagarto.com:8081/hits360tv/hits360HD.myStream/playlist.m3u8"
             ]
@@ -599,12 +801,14 @@
             "name": "V2BEAT",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164072833-665d6162-c38e-40cf-a84a-2765a8d6bfab.jpeg",
             "channelGroupId": "7",
+            "namePattern": ".*V2BEAT.*",
             "sourceUrls": []
         },
         {
             "name": "Xite",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164072909-61aad7fe-06af-4297-a574-bf281fae62b2.png",
             "channelGroupId": "7",
+            "namePattern": ".*Xite.*",
             "sourceUrls": [
                 "https://ms7.mx-cd.net/tv/226-1855782/XITE_NL.smil/chunklist_w323364313_b3328000_slNLD.m3u8"
             ]
@@ -613,6 +817,7 @@
             "name": "M6Music",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164073524-9a633d63-d2c8-4bf8-9975-4d1d7b10be9c.png",
             "channelGroupId": "7",
+            "namePattern": ".*M6Music.*",
             "sourceUrls": [
                 "http://190.2.155.162:8080/m6music/mpegts"
             ]
@@ -621,6 +826,7 @@
             "name": "Kronehit",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164073735-9c9edd8e-71e1-4472-8b0b-e034fb14ff53.png",
             "channelGroupId": "7",
+            "namePattern": ".*Kronehit.*",
             "sourceUrls": [
                 "https://bitcdn-kronehit.bitmovin.com/v2/hls/chunklist_b3128000.m3u8"
             ]
@@ -629,14 +835,102 @@
             "name": "Радио Шансон",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164073920-2011102e-1f66-4efe-ae15-2bacb6e51db6.jpeg",
             "channelGroupId": "7",
+            "namePattern": ".*Радио Шансон.*",
             "sourceUrls": [
                 "http://chanson-video.hostingradio.ru:8080/hls/chansonabr/live_hiq/index.m3u8"
             ]
         },
         {
+            "name": "Евроденс 90х",
+            "logoUrl": "https://user-images.githubusercontent.com/15068331/164073920-2011102e-1f66-4efe-ae15-2bacb6e51db6.jpeg",
+            "channelGroupId": "7",
+            "namePattern": ".*Евроденс 90х.*",
+            "sourceUrls": [
+                "https://eurodance90.catcast.tv/content/36987/index.m3u8"
+            ]
+        },
+        {
+            "name": "Stingray Classic Rock",
+            "logoUrl": "https://user-images.githubusercontent.com/15068331/164051146-3f204a5f-a572-4441-be71-75735e9ecd3d.jpg",
+            "channelGroupId": "3",
+            "namePattern": ".*Stingray Classic Rock.*",
+            "sourceUrls": []
+        },
+        {
+            "name": "Stingray Alternative",
+            "logoUrl": "https://user-images.githubusercontent.com/15068331/164051146-3f204a5f-a572-4441-be71-75735e9ecd3d.jpg",
+            "channelGroupId": "3",
+            "namePattern": ".*Stingray Alternative.*",
+            "sourceUrls": []
+        },
+        {
+            "name": "Stingray Hot Country",
+            "logoUrl": "https://user-images.githubusercontent.com/15068331/164051146-3f204a5f-a572-4441-be71-75735e9ecd3d.jpg",
+            "channelGroupId": "3",
+            "namePattern": ".*Stingray Hot Country.*",
+            "sourceUrls": []
+        },
+        {
+            "name": "Stingray Pop Adult",
+            "logoUrl": "https://user-images.githubusercontent.com/15068331/164051146-3f204a5f-a572-4441-be71-75735e9ecd3d.jpg",
+            "channelGroupId": "3",
+            "namePattern": ".*Stingray Pop Adult.*",
+            "sourceUrls": []
+        },
+        {
+            "name": "Stingray Hit List",
+            "logoUrl": "https://user-images.githubusercontent.com/15068331/164051146-3f204a5f-a572-4441-be71-75735e9ecd3d.jpg",
+            "channelGroupId": "3",
+            "namePattern": ".*Stingray Hit List.*",
+            "sourceUrls": []
+        },
+        {
+            "name": "Stingray Flashback 70S",
+            "logoUrl": "https://user-images.githubusercontent.com/15068331/164051146-3f204a5f-a572-4441-be71-75735e9ecd3d.jpg",
+            "channelGroupId": "3",
+            "namePattern": ".*Stingray Flashback 70S.*",
+            "sourceUrls": []
+        },
+        {
+            "name": "Stingray Remember The 80S",
+            "logoUrl": "https://user-images.githubusercontent.com/15068331/164051146-3f204a5f-a572-4441-be71-75735e9ecd3d.jpg",
+            "channelGroupId": "3",
+            "namePattern": ".*Stingray Remember The 80S.*",
+            "sourceUrls": []
+        },
+        {
+            "name": "Stingray Hip-Hop/R&B",
+            "logoUrl": "https://user-images.githubusercontent.com/15068331/164051146-3f204a5f-a572-4441-be71-75735e9ecd3d.jpg",
+            "channelGroupId": "3",
+            "namePattern": ".*Stingray Hip-Hop\/R&B.*",
+            "sourceUrls": []
+        },
+        {
+            "name": "Stingray Soul Storm",
+            "logoUrl": "https://user-images.githubusercontent.com/15068331/164051146-3f204a5f-a572-4441-be71-75735e9ecd3d.jpg",
+            "channelGroupId": "3",
+            "namePattern": ".*Stingray Soul Storm.*",
+            "sourceUrls": []
+        },
+        {
+            "name": "Stingray Greatest Hits",
+            "logoUrl": "https://user-images.githubusercontent.com/15068331/164051146-3f204a5f-a572-4441-be71-75735e9ecd3d.jpg",
+            "channelGroupId": "3",
+            "namePattern": ".*Stingray Greatest Hits.*",
+            "sourceUrls": []
+        },
+        {
+            "name": "Stingray Exitos Del Momento",
+            "logoUrl": "https://user-images.githubusercontent.com/15068331/164051146-3f204a5f-a572-4441-be71-75735e9ecd3d.jpg",
+            "channelGroupId": "3",
+            "namePattern": ".*Stingray Exitos Del Momento.*",
+            "sourceUrls": []
+        },
+        {
             "name": "Релакс: Мир",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164070042-bd2af7e4-c506-45be-8e8b-0da5574a3cba.jpeg",
             "channelGroupId": "8",
+            "namePattern": "(WORLD HD)|(Камин+ HD)",
             "sourceUrls": [
                 "http://185.57.68.33:8091/232/tracks-v1a1/index.m3u8"
             ]
@@ -645,6 +939,7 @@
             "name": "Релакс: Животные",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164074478-0697672e-906f-4bc6-817c-def8022016a2.jpg",
             "channelGroupId": "8",
+            "namePattern": "",
             "sourceUrls": [
                 "https://stitcheraws.unreel.me/wse-node02.powr.com/live/5c9537b8932c837b49397343/playlist.m3u8"
             ]
@@ -653,6 +948,7 @@
             "name": "Релакс: Космос",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164074594-5ce8e2d4-5eb7-4679-97ae-fe4ab790c249.jpeg",
             "channelGroupId": "8",
+            "namePattern": "",
             "sourceUrls": [
                 "https://stitcheraws.unreel.me/wse-node02.powr.com/live/5c953819932c837b49397345/playlist.m3u8"
             ]
@@ -661,6 +957,7 @@
             "name": "Релакс: Пляжи",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164074693-be377232-d5b6-4707-be16-e5c1cff5b9d6.jpeg",
             "channelGroupId": "8",
+            "namePattern": "",
             "sourceUrls": [
                 "https://stitcheraws.unreel.me/wse-node02.powr.com/live/5c95396f932c837b49397360/playlist.m3u8"
             ]
@@ -669,6 +966,7 @@
             "name": "Релакс: Лес",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164074757-9f0d16c3-e37c-4f03-9913-42ede0162d94.jpeg",
             "channelGroupId": "8",
+            "namePattern": "",
             "sourceUrls": [
                 "https://stitcheraws.unreel.me/wse-node02.powr.com/live/5c953836932c837b49397355/playlist.m3u8"
             ]
@@ -677,6 +975,7 @@
             "name": "Релакс: Озёра",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164080028-45d43b08-29b3-439f-9bf0-88754f97d18d.png",
             "channelGroupId": "8",
+            "namePattern": "",
             "sourceUrls": [
                 "https://stitcheraws.unreel.me/wse-node02.powr.com/live/5c95385c932c837b49397356/playlist.m3u8"
             ]
@@ -685,6 +984,7 @@
             "name": "Релакс: Горы",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164074936-ce9c1d78-faab-4635-940c-5a95edf8e977.jpg",
             "channelGroupId": "8",
+            "namePattern": "",
             "sourceUrls": [
                 "https://stitcheraws.unreel.me/wse-node02.powr.com/live/5c95387b932c837b49397357/playlist.m3u8"
             ]
@@ -693,6 +993,7 @@
             "name": "Релакс: Реки",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164075003-a83533a5-7aba-4a2d-b40e-92ff342c0995.jpg",
             "channelGroupId": "8",
+            "namePattern": "",
             "sourceUrls": [
                 "https://stitcheraws.unreel.me/wse-node02.powr.com/live/5c95388f932c837b4939735a/playlist.m3u8"
             ]
@@ -701,6 +1002,7 @@
             "name": "Релакс: Закат",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164075132-278e5678-0bfc-42c9-abf9-f15d694ef855.jpg",
             "channelGroupId": "8",
+            "namePattern": "",
             "sourceUrls": [
                 "https://stitcheraws.unreel.me/wse-node02.powr.com/live/5c9538a5932c837b4939735b/playlist.m3u8"
             ]
@@ -709,6 +1011,7 @@
             "name": "Релакс: Джунгли",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164075219-b66fb0c2-2944-495f-b23e-068970fdfc02.jpg",
             "channelGroupId": "8",
+            "namePattern": "",
             "sourceUrls": [
                 "https://stitcheraws.unreel.me/wse-node02.powr.com/live/5c9538b9932c837b4939735c/playlist.m3u8"
             ]
@@ -717,6 +1020,7 @@
             "name": "Релакс: Водопады",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164075487-b4a194eb-88a5-458f-be19-e7d33141ca88.jpg",
             "channelGroupId": "8",
+            "namePattern": "",
             "sourceUrls": [
                 "https://95771f8415a84e31bd152fe9c6c9905c.mediatailor.us-east-1.amazonaws.com/v1/master/82ded7a88773aef3d6dd1fedce15ba2d57eb6bca/wse_powr_com_5c953910932c837b4939735d/playlist.m3u8"
             ]
@@ -725,6 +1029,7 @@
             "name": "Релакс: Дождь",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164075368-c2f9ca5e-cda1-405c-9e8c-3daeb5fed832.jpg",
             "channelGroupId": "8",
+            "namePattern": "",
             "sourceUrls": [
                 "https://a.jsrdn.com/broadcast/76381deeda/+0000/c.m3u8"
             ]
@@ -733,20 +1038,14 @@
             "name": "Релакс: Камин 1",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164075658-1a485ecc-c711-4ce2-933a-585af593494e.png",
             "channelGroupId": "8",
+            "namePattern": "",
             "sourceUrls": []
-        },
-        {
-            "name": "Релакс: Камин 2",
-            "logoUrl": "https://user-images.githubusercontent.com/15068331/164075658-1a485ecc-c711-4ce2-933a-585af593494e.png",
-            "channelGroupId": "8",
-            "sourceUrls": [
-                "http://185.57.68.33:8091/232/tracks-v1a1/index.m3u8"
-            ]
         },
         {
             "name": "Релакс: Очаг",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164075771-33f02514-cae7-4af9-8607-2656e640d19f.jpg",
             "channelGroupId": "8",
+            "namePattern": "",
             "sourceUrls": [
                 "https://fireside.localnowlive.com/v1/master/385c85a93929f94966d0fb186fc33b431e6f1eb9/DSP_5fdd393a31300f16077a1692_fireside/playlist.m3u8"
             ]
@@ -755,12 +1054,14 @@
             "name": "Релакс: Аквариум",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164075857-ede2cf52-067c-4eff-bd1d-dce2cb3d6ad0.jpg",
             "channelGroupId": "8",
+            "namePattern": "",
             "sourceUrls": []
         },
         {
             "name": "Релакс: Острова",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/164075971-0a78b0a1-fd1f-436a-8750-90256660efec.jpeg",
             "channelGroupId": "8",
+            "namePattern": "",
             "sourceUrls": [
                 "https://a.jsrdn.com/broadcast/41e3e6703e/+0000/c.m3u8"
             ]
@@ -769,6 +1070,7 @@
             "name": "Релакс: Наша Сибирь",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/163713306-688fb76c-22d6-47db-a046-540d83919737.jpg",
             "channelGroupId": "8",
+            "namePattern": ".*Наша Сибирь.*",
             "sourceUrls": [
                 "https://livetv.mylifeisgood.ml/channels/nashasibir4k"
             ]
@@ -777,6 +1079,7 @@
             "name": "Тест недоступного канала",
             "logoUrl": "https://user-images.githubusercontent.com/15068331/163710937-4af4006d-8d43-4d1f-b004-2e810e0f5c69.jpg",
             "channelGroupId": "9",
+            "namePattern": "",
             "sourceUrls": [
                 ""
             ]
