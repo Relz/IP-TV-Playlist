@@ -18,6 +18,9 @@ RUN apk add --no-cache ffmpeg
 
 COPY --from=build /runtime/ /
 COPY --from=build /app/bin/server /app/bin/
+COPY --from=build /app/assets /app/assets
+
+WORKDIR /app
 
 # Start server.
 CMD ["/app/bin/server"]
